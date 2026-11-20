@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade · Painel do Canal</title>
+  <link rel="icon" href="icone.png">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main>
+    <p><a href="index.html">← Painel do Canal</a></p>
+    <h1>Painel do Canal: Política de Privacidade</h1>
+    <p class="suave">Última atualização: 20 de novembro de 2026 (inclui TikTok e modo visitante)</p>
+
+    <h2>Sobre o app</h2>
+    <p>O Painel do Canal é uma ferramenta particular usada somente pelo dono do canal MAIKIZADA VIEWS
+      (YouTube: <a href="https://www.youtube.com/@maikizada-d9h" target="_blank" rel="noopener">youtube.com/@maikizada-d9h</a>).
+      Ela roda apenas no computador do dono (endereço local http://localhost:3000) e não é oferecida ao público nem a outros criadores.</p>
+    <p>A ferramenta usa os Serviços de API do YouTube (YouTube Data API e YouTube Analytics API) e a API de publicação de conteúdo do TikTok (Content Posting API) para:</p>
+    <ul>
+      <li>mostrar os números de crescimento do próprio canal do YouTube (visualizações, tempo assistido, inscritos, retenção);</li>
+      <li>ler e responder comentários dos vídeos do próprio canal do YouTube;</li>
+      <li>editar título e descrição dos vídeos do próprio canal do YouTube;</li>
+      <li>enviar e agendar os próprios vídeos no YouTube e, se o dono escolher, publicar o mesmo vídeo na própria conta do TikTok;</li>
+      <li>opcionalmente, mostrar dados públicos de até 5 canais parecidos do YouTube, para acompanhar tendências.</li>
+    </ul>
+
+    <h2>1. Quais dados são acessados</h2>
+    <p><b>YouTube:</b> com a autorização do dono do canal (login do Google/OAuth), o app acessa informações do canal e dos vídeos, estatísticas
+      e relatórios de desempenho, e comentários públicos feitos nos vídeos do canal (nome público do autor e texto do comentário).
+      Opcionalmente, o dono pode cadastrar até 5 canais do YouTube parecidos com o dele; nesse caso, o app lê apenas dados públicos desses
+      canais (nome, número de inscritos, títulos, capas e contagem de views dos vídeos recentes), só para mostrar tendências ao dono. Nada é alterado nesses canais.</p>
+    <p><b>TikTok:</b> com a autorização do dono (Login com TikTok), o app acessa apenas as informações básicas do perfil do dono (identificador, nome e foto)
+      e as opções de publicação da conta (por exemplo, quem pode ver o vídeo), que são necessárias para publicar. O app não lê vídeos, seguidores,
+      mensagens nem dados de outras pessoas no TikTok.</p>
+
+    <h2>2. Como os dados são usados</h2>
+    <p>Só para mostrar os números do canal ao dono, ajudar a responder comentários e gerenciar e publicar os vídeos do próprio dono.
+      Quando o dono escolhe publicar, o arquivo de vídeo, o título, a descrição e as opções escolhidas por ele são enviados ao YouTube e/ou ao TikTok, conforme o que ele marcar.</p>
+    <p><b>Respostas com IA (opcional, desligada por padrão):</b> se o dono ativar e colocar a própria chave da Anthropic, o texto de um comentário,
+      o nome público do autor e o título do vídeo são enviados à API da Anthropic (Claude) apenas para gerar uma sugestão de resposta.
+      A Anthropic trata esses dados conforme a <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">política de privacidade dela</a>.
+      Nenhum outro dado do YouTube é enviado.</p>
+
+    <h2>3. Onde os dados ficam (armazenamento)</h2>
+    <p>Os dados e os tokens de acesso (Google e TikTok) ficam guardados apenas no computador do dono. Não existe servidor externo nem banco de dados na internet.</p>
+
+    <h2>4. Compartilhamento</h2>
+    <p>Nenhum dado é vendido ou usado para publicidade. Os únicos compartilhamentos possíveis são:</p>
+    <ul>
+      <li>a publicação dos vídeos do próprio dono no YouTube e no TikTok, quando ele escolhe;</li>
+      <li>o envio do texto de comentários à Anthropic, descrito no item 2, só quando o dono ativa as respostas com IA;</li>
+      <li><b>modo visitante (opcional):</b> o dono pode gerar um link de visualização para pessoas de confiança. Quem abre esse link vê apenas os números
+        de desempenho do canal (visualizações, inscritos, retenção, lista de vídeos e estratégia). O visitante não vê comentários e não consegue responder,
+        editar, enviar vídeos nem mudar configurações. O link é protegido por uma chave secreta, pode ser acessado pela internet por um túnel seguro
+        (https, Cloudflare) só quando o dono liga essa opção, e o dono pode cancelar o acesso a qualquer momento trocando o link.</li>
+    </ul>
+
+    <h2>5. Cookies</h2>
+    <p>O app não usa cookies de rastreamento nem ferramentas de análise de terceiros. Só usa cookies técnicos para liberar o acesso pelo celular do dono e o acesso de visitantes autorizados.</p>
+
+    <h2>6. Serviços do YouTube, Google e TikTok</h2>
+    <p>Este app usa os Serviços de API do YouTube. Ao usá-lo, você concorda com os
+      <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Termos de Serviço do YouTube</a>.
+      Veja também a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.</p>
+    <p>Este app também usa as APIs do TikTok; o uso do TikTok segue os
+      <a href="https://www.tiktok.com/legal/terms-of-service" target="_blank" rel="noopener">Termos de Serviço do TikTok</a> e a
+      <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener">Política de Privacidade do TikTok</a>.</p>
+
+    <h2>7. Como revogar o acesso e apagar os dados</h2>
+    <p><b>Google/YouTube:</b> o acesso pode ser cancelado a qualquer momento em
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
+    <p><b>TikTok:</b> o acesso pode ser cancelado no aplicativo do TikTok em Configurações e privacidade → Segurança → Apps e serviços com permissão.</p>
+    <p>No painel, os botões de desconectar apagam os tokens de acesso. Os demais dados guardados no computador são apagados ao excluir a pasta do app,
+      e dados obtidos das APIs que não forem mais necessários são descartados.</p>
+
+    <h2>8. Contato</h2>
+    <p>Pelo canal <a href="https://www.youtube.com/@maikizada-d9h" target="_blank" rel="noopener">MAIKIZADA VIEWS</a> no YouTube.</p>
+
+    <footer class="suave"><a href="termos.html">Termos de Serviço</a> · <a href="index.html">Início</a></footer>
+  </main>
+</body>
+</html>
